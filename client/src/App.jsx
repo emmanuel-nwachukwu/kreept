@@ -6,9 +6,11 @@ import {
   Transactions,
   Services,
 } from "./components";
+// import TransactionProvider from "./context/TransactionContext";
 
 const App = () => {
   return (
+    // <TransactionProvider>
     <div className="min-h-screen text-white">
       <div className="gradient-bg-welcome">
         <NavBar />
@@ -18,6 +20,7 @@ const App = () => {
       <Transactions />
       <Footer />
     </div>
+    // </TransactionProvider>
   );
 };
 

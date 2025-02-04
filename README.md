@@ -2,5 +2,12 @@
 
 ## React, Solidity, Crypto, SmartContract
 
-Packages
-- tailwindcss @tailwindcss/vite
+tools
+
+- alchemy
+- metamask
+- sepolia test network
+- hardhat
+- developers.giphy.com
+- sepolia.etherscan.io
+- solidity

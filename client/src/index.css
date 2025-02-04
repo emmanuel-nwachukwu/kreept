@@ -1,8 +1,9 @@
-@import "tailwindcss";
-
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300..700&display=swap");
 
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"); */
+:root {
+  --mf: "990px";
+}
 * html {
   padding: 0;
   margin: 0;
@@ -102,4 +103,38 @@ body {
     radial-gradient(at 100% 60%, rgb(0, 0, 0) 0, transparent 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@import "tailwindcss";
+@theme {
+  --breakpoint-mf: 990px;
+  --spacing: 4px;
+
+  /* Define animation keyframes under the --animate-* namespace */
+  --animate-slide-in: slide-in 0.5s ease-out;
+
+  @keyframes slide-in {
+    0% {
+      -webkit-transform: translateX(120%);
+      transform: translateX(120%);
+    }
+    100% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+  }
+
+  /* Slide out animation */
+  --animate-slide-out: slide-out 0.2s ease-out;
+
+  @keyframes slide-out {
+    0% {
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+    100% {
+      -webkit-transform: translateX(120%);
+      transform: translateX(120%);
+    }
+  }
 }
